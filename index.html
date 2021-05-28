@@ -1,0 +1,314 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>IT Studio</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.header__burger').click(function(event) {
+					$('.header__burger, .header__menu').toggleClass('active');
+					$('body').toggleClass('lock');
+				});
+				$('.header__menu').click(function(event) {
+					$('.header__burger, .header__menu').removeClass('active');
+					$('body').removeClass('lock');
+				});
+			});
+		</script>
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="container">
+					<div class="header-body">
+						<nav class="header__menu">
+							<ul class="header__list">
+								<li id="active"><a href="" class="header__link">Главная</a></li>
+								<li><a href="#projects" class="header__link">Наши проекты</a></li>
+								<li><a href="#works" class="header__link">Услуги</a></li>
+								<li><a href="#signin" class="header__link">Новости</a></li>
+								<li><a href="" class="header__link">Контакты</a></li>
+							</ul>
+						</nav>
+						<div class="header__burger">
+							<span></span>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="content">
+				<main class="main">
+					<div class="container">
+						<p class="main__text">Передовая IT студия</p>
+						<h1 class="main__title">Мы создаем легкие решения <br>сложных задач и проблем</h1>
+						<div class="main-button button-block">
+							<a href="" class="main__btn btn">Наши проекты</a>
+						</div>
+					</div>
+				</main>
+				<section class="about">
+					<div class="container">
+						<h2 class="about__title title--h2">Мы создаем мобильные приложения для крупных корпораций</h2>
+						<p class="about__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+						<div class="about-body">
+							<div class="about__column">
+								<div class="about-item">
+									<div class="item__img">
+										<div class="inner__circle">
+											<img src="img/about/icon.svg" alt="">
+										</div>
+									</div>
+									<div class="item__txt">
+										<h3 class="item__title title--h3">Создание сайтов</h3>
+										<p class="item__text">Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.</p>
+									</div>
+								</div>
+							</div>
+							<div class="about__column">
+								<div class="about-item">
+									<div class="item__img">
+										<div class="inner__circle">
+											<img src="img/about/icon.svg" alt="">
+										</div>
+									</div>
+									<div class="item__txt">
+										<h3 class="item__title title--h3">Создание сайтов</h3>
+										<p class="item__text">Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.</p>
+									</div>
+								</div>
+							</div>
+							<div class="about__column">
+								<div class="about-item">
+									<div class="item__img">
+										<div class="inner__circle">
+											<img src="img/about/icon.svg" alt="">
+										</div>
+									</div>
+									<div class="item__txt">
+										<h3 class="item__title title--h3">Создание сайтов</h3>
+										<p class="item__text">Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="about-button button-block">
+							<a href="" class="about__btn btn">Все услуги</a>
+						</div>
+					</div>
+				</section>
+				<section class="standards">
+					<div class="container">
+						<div class="standards-body">
+							<div class="standards__column column--txt">
+								<div class="standards-column__item">
+									<h2 class="standards__title title--h2">Высокие стандарты разработки</h2>
+									<p class="standards__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+									<div class="standards-link">
+										<a href="" class="standards__link link">Подробнее о компании</a>
+									</div>
+								</div>
+							</div>
+							<div class="standards__column column--img">
+								<img src="img/standards/01.jpg" alt="" class="standards__img">
+							</div>
+						</div>
+						<div class="standards-bottom">
+							<div class="standards-bottom__column">
+								<div class="bottom-item">
+									<div class="bottom-item__top">
+										<img src="img/standards/icon.svg" alt="" class="standards-bottom__icon">
+										<p class="standards-bottom__number">125</p>
+									</div>
+									<p class="standards-bottom__text">Our projects</p>
+								</div>
+							</div>
+							<div class="standards-bottom__column">
+								<div class="bottom-item">
+									<div class="bottom-item__top">
+										<img src="img/standards/icon.svg" alt="" class="standards-bottom__icon">
+										<p class="standards-bottom__number">125</p>
+									</div>
+									<p class="standards-bottom__text">Our projects</p>
+								</div>
+							</div>
+							<div class="standards-bottom__column">
+								<div class="bottom-item">
+									<div class="bottom-item__top">
+										<img src="img/standards/icon.svg" alt="" class="standards-bottom__icon">
+										<p class="standards-bottom__number">125</p>
+									</div>
+									<p class="standards-bottom__text">Our projects</p>
+								</div>
+							</div>
+							<div class="standards-bottom__column">
+								<div class="bottom-item">
+									<div class="bottom-item__top">
+										<img src="img/standards/icon.svg" alt="" class="standards-bottom__icon">
+										<p class="standards-bottom__number">125</p>
+									</div>
+									<p class="standards-bottom__text">Our projects</p>
+								</div>
+							</div>
+							<div class="standards-bottom__column">
+								<div class="bottom-item">
+									<div class="bottom-item__top">
+										<img src="img/standards/icon.svg" alt="" class="standards-bottom__icon">
+										<p class="standards-bottom__number">5</p>
+									</div>
+									<p class="standards-bottom__text">Our projects</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="works" class="works">
+					<div class="container">
+						<div class="works-title-block">
+							<h2 class="works__title title--h2 white">Наши работы, на которых мы специализируемся</h2>
+							<div class="works-button">
+								<a href="" class="works__btn btn">Все услуги</a>
+							</div>
+						</div>
+						<div class="works-body">
+							<div class="works__column">
+								<img src="img/works/01.jpg" alt="" class="works__img">
+								<h3 class="works-column__title title--h3"><span>01. </span>Исследование и упаковка</h3>
+								<p class="works__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+								<div class="works-link">
+									<a href="" class="works__link link">Подробнее</a>
+								</div>
+							</div>
+							<div class="works__column">
+								<img src="img/works/01.jpg" alt="" class="works__img">
+								<h3 class="works-column__title title--h3"><span>02. </span>Исследование и упаковка</h3>
+								<p class="works__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+								<div class="works-link">
+									<a href="" class="works__link link">Подробнее</a>
+								</div>
+							</div>
+							<div class="works__column">
+								<img src="img/works/01.jpg" alt="" class="works__img">
+								<h3 class="works-column__title title--h3"><span>03. </span>Исследование и упаковка</h3>
+								<p class="works__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+								<div class="works-link">
+									<a href="" class="works__link link">Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="projects" class="projects">
+					<div class="container">
+						<h2 class="projects__title title--h2">Наши проекты</h2>
+						<p class="projects__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+						<div class="projects-body">
+							<div class="projects__column">
+								<img src="img/projects/01.jpg" alt="" class="projects__img">
+							</div>
+							<div class="projects__column">
+								<img src="img/projects/01.jpg" alt="" class="projects__img">
+							</div>
+							<div class="projects__column">
+								<img src="img/projects/01.jpg" alt="" class="projects__img">
+							</div>
+							<div class="projects__column">
+								<img src="img/projects/01.jpg" alt="" class="projects__img">
+							</div>
+						</div>
+						<div class="projects-button button-block">
+							<a href="" class="projects__btn btn">Все проекты</a>
+						</div>
+					</div>
+				</section>
+				<section class="video">
+					<div class="container">
+						<h2 class="video__title title--h2 white">Видео о нашей работе</h2>
+						<p class="video__text">Просто посмотрите, как мы работаем</p>
+						<div class="video-body">
+							<img src="img/video/01.jpg" alt="" class="video__img">
+							<div class="video-play">
+								<div class="play__btn">
+									<div class="play__triangle"></div>
+								</div>
+								<p class="play__text">Смотреть видео</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="signin" class="signin">
+					<div class="container">
+						<div class="signin-body">
+							<h3 class="signin__title title--h3">Подпишитесь на нашу рассылку</h3>
+							<p class="signin__subtitle">Полезные статьи, акции, новости - получите все это сейчас!</p>
+							<div class="signin__form">
+								<form action="" class="form__body">
+									<div class="input-line">
+										<input type="email" name="email" placeholder="Ваш e-mail" class="input__line">
+									</div>
+									<div class="submit-button">
+										<input type="submit" value="Подписаться" class="submit__btn btn btn--form">
+									</div>
+								</form>
+							</div>
+							<p class="signin__text">Мы не шлем спам, и не передаем никому ваши данные.</p>
+						</div>
+					</div>
+				</section>
+			</div>
+			<footer class="footer">
+				<div class="container">
+					<div class="footer-body">
+						<div class="footer__column">
+							<h3 class="footer__title title--h3">Контактная информация</h3>
+							<ul class="footer__list">
+								<li><a href="mailto:test@test.ru" id="email" class="footer__link contact">test@test.ru</a></li>
+								<li><a href="tel:+87775556699" id="call" class="footer__link contact">+8 777 555 66 99</a></li>
+								<li><a href="" id="place" class="footer__link contact">Москва, Бульвар Ленина 33</a></li>
+							</ul>
+						</div>
+						<div class="footer__column">
+							<h3 class="footer__title title--h3">Основные ссылки</h3>
+							<ul class="footer__list">
+								<li><a href="" class="footer__link">Главная</a></li>
+								<li><a href="" class="footer__link">Наши проекты</a></li>
+								<li><a href="" class="footer__link">Наши услуги</a></li>
+								<li><a href="" class="footer__link">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="footer__column">
+							<h3 class="footer__title title--h3">Наши проекты</h3>
+							<ul class="footer__list">
+								<li><a href="" class="footer__link">РосНано</a></li>
+								<li><a href="" class="footer__link">Сколково</a></li>
+								<li><a href="" class="footer__link">Проект “Восток”</a></li>
+								<li><a href="" class="footer__link">ТЭЦ Калининграда</a></li>
+							</ul>
+						</div>
+						<div class="footer__column">
+							<h3 class="footer__title title--h3">Социальные сети</h3>
+							<ul class="footer__list">
+								<li><a href="" class="footer__link">VK.com</a></li>
+								<li><a href="" class="footer__link">Instagram</a></li>
+								<li><a href="" class="footer__link">Facebook</a></li>
+								<li><a href="" class="footer__link">Twitter</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer-bottom">
+						<p class="footer__copyright">(с) 2019. Все права защищены.</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
