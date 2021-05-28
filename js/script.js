@@ -1,10 +1,26 @@
-$(document).ready(function(){
-	$('.header__burger').click(function(event) {
-		$('.header__burger, .header__menu').toggleClass('active');
-		$('body').toggleClass('lock');
-	});
-	$('.header__menu').click(function(event) {
-		$('.header__burger, .header__menu').removeClass('active');
-		$('body').removeClass('lock');
-	});
+"use strict";
+
+window.addEventListener('DOMContentLoaded', () => {
+
+	// Header Mobile Menu
+
+	const body = document.querySelector('body'),
+		  headerMenu = document.querySelector('.header__menu'),
+		  burgerBtn = document.querySelector('.header__burger');
+
+	function openMenu() {
+		burgerBtn.classList.toggle('active');
+		headerMenu.classList.toggle('active');
+		body.classList.toggle('lock');
+	}
+
+	function closeMenu() {
+		burgerBtn.classList.remove('active');
+		headerMenu.classList.remove('active');
+		body.classList.remove('lock');
+	}
+
+	burgerBtn.addEventListener('click', openMenu);
+	headerMenu.addEventListener('click', closeMenu);
+
 });
