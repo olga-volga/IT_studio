@@ -23,4 +23,30 @@ window.addEventListener('DOMContentLoaded', () => {
 	burgerBtn.addEventListener('click', openMenu);
 	headerMenu.addEventListener('click', closeMenu);
 
+
+	// Modal Email
+
+	const emailBtn = document.querySelector('.submit__btn'),
+		  modal = document.querySelector('.modal-email'),
+		  close = document.querySelector('.modal-email__close');
+
+	function showModal() {
+		modal.style.display = 'block';
+		document.body.style.overflow = 'hidden';
+	}
+
+	function closeModal() {
+		modal.style.display = 'none';
+		document.body.style.overflow = '';
+	}
+
+	emailBtn.addEventListener('click', showModal);
+	close.addEventListener('click', closeModal);
+
+	modal.addEventListener('click', (e) => {
+		if (e.target === modal) {
+			closeModal();
+		}
+	});
+
 });

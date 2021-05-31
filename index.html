@@ -4,9 +4,7 @@
 		<title>IT Studio</title>
 		<link rel="stylesheet" href="css/style.css">
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="js/script.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">		
 	</head>
 	<body>
 		<div class="wrapper">
@@ -29,7 +27,7 @@
 				</div>
 			</header>
 			<div class="content">
-				<main class="main">
+				<section class="main">
 					<div class="container">
 						<p class="main__text">Передовая IT студия</p>
 						<h1 class="main__title">Мы создаем легкие решения <br>сложных задач и проблем</h1>
@@ -37,7 +35,7 @@
 							<a href="" class="main__btn btn">Наши проекты</a>
 						</div>
 					</div>
-				</main>
+				</section>
 				<section class="about">
 					<div class="container">
 						<h2 class="about__title title--h2">Мы создаем мобильные приложения для крупных корпораций</h2>
@@ -235,7 +233,7 @@
 							<div class="signin__form">
 								<form action="" class="form__body">
 									<div class="input-line">
-										<input type="email" name="email" placeholder="Ваш e-mail" class="input__line">
+										<input required type="email" name="email" placeholder="Ваш e-mail" class="input__line">
 									</div>
 									<div class="submit-button">
 										<input type="submit" value="Подписаться" class="submit__btn btn btn--form">
@@ -291,6 +289,16 @@
 					</div>
 				</div>
 			</footer>
+
+			<div class="modal-email">
+				<div class="modal-email__body">
+					<div class="modal-email__close">&times;</div>
+					<h4 class="modal-email__title">Вы успешно подписались!</h4>
+					<p class="modal-email__text">Теперь вы будете в курсе самых свежих новостей, акций и статей!</p>
+				</div>
+			</div>
+
 		</div>
+		<script src="js/script.js"></script>
 	</body>
 </html>
